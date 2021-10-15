@@ -1,5 +1,5 @@
 # Demo 
-https://github-trending-clone.vercel.app/developers
+https://github-trending-clone.vercel.app/
 
 
 # Getting Started with Create React App
