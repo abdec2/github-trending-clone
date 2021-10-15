@@ -7,7 +7,7 @@ function FollowBtn() {
         setFollow(!follow)
     }
     return (
-        <button onClick={handleSetFollow} className="px-3 py-1 text-xs text-gray-400 leading-5 bg-gray-600 bg-opacity-25 border rounded transition duration-200 ease-in-out border-gray-500 border-opacity-40  hover:border-gray-400">
+        <button onClick={handleSetFollow} className="px-3 py-1 text-xs text-gray-400 leading-5 bg-gray-600 bg-opacity-25 border rounded-md transition duration-200 ease-in-out border-gray-500 border-opacity-40  hover:border-gray-400 hover:bg-opacity-50">
             {
 
                 (!follow) ? (

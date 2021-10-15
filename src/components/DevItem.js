@@ -2,7 +2,7 @@ import { Icon } from '@iconify/react';
 import FollowBtn from "./FollowBtn"
 function DevItem({ dev }) {
     return (
-        <article className="border-gray-500 border-opacity-40 border border-t-0 p-4 break-words bg-clip-border flex">
+        <article className="border-gray-500 border-opacity-30 border border-t-0 p-4 break-words bg-clip-border flex">
             <a className="text-gray-400 text-xs" href={"#pa-" + dev.username} style={{ width: '16px' }}> {dev.rank} </a>
             <div className="mx-4">
                 <a href={dev.url}>
@@ -31,7 +31,7 @@ function DevItem({ dev }) {
                                             Popular repo
                                         </div>
                                         <h1 className="leading-tight font-semibold text-base">
-                                            <a href="" className="truncate inline-block align-top leading-5 text-blue-400 hover:underline">
+                                            <a href={dev.popularRepository.url} className="truncate inline-block align-top leading-5 text-blue-400 hover:underline">
                                                 <Icon className="text-gray-400 mr-1 align-text-bottom inline-block overflow-visible" icon="octicon:repo-16" width="16" height="16" />
                                                 &nbsp;{dev.popularRepository.repositoryName}
                                             </a>

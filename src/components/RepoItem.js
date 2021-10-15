@@ -3,14 +3,14 @@ import StarBtn from "./StarBtn"
 
 function RepoItem({ repo }) {
     return (
-        <article className="border-gray-500 border border-t-0 p-4 break-words bg-clip-border border-opacity-40">
+        <article className="border-gray-500 border border-t-0 p-4 break-words bg-clip-border border-opacity-30">
             <div className="float-right">
                 <div className="block">
                     <StarBtn />
                 </div>
             </div>
             <h1 className="leading-tight font-semibold md:text-xl">
-                <a className="text-blue-500 no-underline hover:underline" href={repo.url}>
+                <a className="text-blue-400 no-underline hover:underline" href={repo.url}>
                     <Icon className="text-gray-400 mr-2.5 align-text-bottom inline-block overflow-visible" icon="octicon:repo-16" height={16} width={16} />
                     <span className="font-normal">{repo.username} / </span>
                     {repo.repositoryName}
