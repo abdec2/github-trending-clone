@@ -8,7 +8,7 @@ import RepoItem from "./RepoItem"
 function Repo() {
     const opt = ['English', 'Urdu', 'Hindi', 'African']
     const { isLoading, data } = useQuery('repos', () => {
-        return axios.get('https://cors-proxy.htmldriven.com/?url=https://gh-trending-api.herokuapp.com/repositories')
+        return axios.get('https://gh-trending-api.herokuapp.com/repositories')
     })
     return (
         <div className="container container-lg mx-auto py-10 px-4 font-sans">
