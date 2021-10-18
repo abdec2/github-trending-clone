@@ -10,7 +10,7 @@ import DevItem from "./DevItem"
 function Devs() {
     const opt = ['English', 'Urdu', 'Hindi', 'African']
     const { isLoading, data } = useQuery('devs', () => {
-        return axios.get('https://gh-trending-api.herokuapp.com/developers')
+        return axios.get('https://api.codetabs.com/v1/proxy?quest=https://gh-trending-api.herokuapp.com/developers')
     })
     console.log(data)
     return (
